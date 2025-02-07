@@ -48,4 +48,8 @@ console.log(keys);
 // });
 
 const PORT = process.env.PORT || 5001;
-app.listen(PORT);
+console.log(`Using PORT: ${PORT}`);
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
