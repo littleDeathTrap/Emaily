@@ -47,9 +47,6 @@ console.log(keys);
 //   res.send({ hi: "there" });
 // });
 
-const PORT = process.env.PORT || 5001;
-console.log(`Using PORT: ${PORT}`);
-
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server is running on port ${PORT}`);
 });
